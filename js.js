@@ -1,16 +1,14 @@
-var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
+var baseUrl = 'https://kodilla.com/pl/bootcamp-api
+';
 var myHeaders = {
-    'X-Client-Id': '2826',
-    'X-Auth-Token': '2ecde4c4368cb381c79a762b52b79042'
+    'X-Client-Id': 'X-Client-Id',
+    'X-Auth-Token': 'X-Auth-Token'
 };
 
 $.ajaxSetup({
     headers: myHeaders
 });
 
-
-
-// OGÓLNA FUNKCJA
 $.ajax({
     url: baseUrl + '/board',
     method: 'GET',
@@ -27,10 +25,9 @@ function setupColumns(columns) {
     });
 }
 
-
 function setupCards(col, cards) {
     cards.forEach(function(card) {
-        var cardObj = new Card(card.id, card.name, card.bootcamp_kanban_column_id);
-        col.createCard(cardObj);
+        var cardObj = new Card(card.id, card.name, card.bootkamp_kanban_column_id);
+        col.addCard(cardObj);
     })
 }
