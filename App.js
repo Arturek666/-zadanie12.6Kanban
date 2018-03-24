@@ -32,5 +32,5 @@ function setupCards(col, cards) {
     cards.forEach(function(card) {
         var cardObj = new Card(card.id, card.name, card.bootcamp_kanban_column_id);
         col.createCard(cardObj);
-    })
+    });
 }
