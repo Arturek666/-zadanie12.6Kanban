@@ -7,10 +7,6 @@ var myHeaders = {
 $.ajaxSetup({
     headers: myHeaders
 });
-
-
-
-// OGÓLNA FUNKCJA
 $.ajax({
     url: baseUrl + '/board',
     method: 'GET',
@@ -26,7 +22,6 @@ function setupColumns(columns) {
         setupCards(col, column.cards);
     });
 }
-
 
 function setupCards(col, cards) {
     cards.forEach(function(card) {
